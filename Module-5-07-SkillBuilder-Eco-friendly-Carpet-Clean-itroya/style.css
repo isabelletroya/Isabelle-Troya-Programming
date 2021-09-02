@@ -1,0 +1,101 @@
+
+body {
+  background-color: #FDFEFF;
+  margin: 0;
+}
+
+header {
+  background-color: #FDFEFF;
+  height: 100px;
+}
+
+img {
+  background-color: #0096FF;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+ 
+.nav ul {
+  background-color: #0096FF;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: right;
+}
+
+.nav li {
+  background-color: #0096FF;
+  display: inline-block;
+  padding: 15px;
+  margin: 0 10px;
+}
+ 
+.nav a {
+  background-color: #0096FF;
+  color: #FDFEFF;
+  text-decoration: none;
+  text-align: right;
+}
+
+section {
+  background-color:#FDFEFF;
+  width: 840px;
+  margin: 50px auto 0 auto;
+}
+
+.section-box {
+  display: inline-block;
+  width: 400px;
+  height: 300px;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+
+#quote-offer-container {
+  background-color: #E8E8E8		;
+  margin-right: 40px;
+  text-align: center;
+  height: 175px;
+  width: 300px;
+  margin-top: 30px;
+  border: 1px dashed #191970;
+  border-radius: 2%;
+}
+
+#quote-form-container {
+  background-color: #FDFEFF;
+  padding: 20px;
+  margin-top: 30px;
+  height: 200px;
+}
+
+#quote-form {
+  background-color: #FDFEFF;
+  text-align: center;
+  border: 1px solid #191970;
+  padding: 20px;
+  border-radius: 2%;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+
+button {
+  border: none;
+  background-color: #6495ED;
+  color: white;
+  height: 30px;
+  width:  60px;
+  font-size: 12pt;
+  margin-top: 10px;
+  text-align: center;
+}
+
+body, html {
+    height: 100%;
+}
+

@@ -1,0 +1,227 @@
+/* You can add custom CSS and override boostrap styles in this file.  Remember, bootstrap is just CSS at the end of the day! */
+
+body {
+  background-color: #ffddf4;
+}
+
+#hero-section {
+  /*This should be an image. */
+  background-image: linear-gradient(rgb(114, 8, 146,.1), #ffddf4), url("helping.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+
+  /* sizzle: Used parallax */
+  position: relative;
+  min-height: 25vh;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+  /* Change this values to work for you. */
+  padding: clamp(100px, 75vh, 200px) 0;
+}
+
+#profile-img {
+  /* Change this values to work for you. */
+  margin: clamp(10px, 20vh, 100px) auto;
+
+  /* This should be an image */
+  background-image: url("pfp.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+
+  /* Change this values to work for you. */
+  height: clamp(100px, 25vw, 300px);
+
+  /* Change this values to work for you. */
+  width: clamp(100px, 25vw, 300px);
+  
+} 
+
+#hero-section h2 {
+  /* How to center text? */
+  text-align: center;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+  font-size: clamp(1.75em, 10vw, 3.2em);
+  /* Add responsive vertical margins via clamp? */
+  /*No thank you*/
+}
+
+
+#hero-section h4 {
+  text-align: center;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 5vw, 2.1em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+h3 {
+  padding-top: 70px;
+}
+
+#mission-section h3 {
+  color:black;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75em, 10vw, 3.2em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+
+#skills-section h3 {
+  color:black;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75em, 10vw, 3.2em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+  }
+
+#inspiration-section h3 {
+  color:black;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75em, 10vw, 3.2em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+#contact-section h3 {
+  color:black;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75em, 10vw, 3.2em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+.column {
+  flex: 20%;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.column p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 4vw, 1.25em);
+  }
+
+.column img {
+  width: clamp(50px, 50vw, 200px);
+  vertical-align: middle;
+  text-align: center;
+}
+
+.col-sm-1 {
+  flex: 10%;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-sm-1 p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 4vw, 1.25em);
+  padding-top: 20px;
+}
+
+.col-sm-1 img {
+  width: clamp(50px, 20vw, 150px);
+  vertical-align: middle;
+  color: black;
+  filter: brightness(0.8);
+}
+
+/* sizzle: when you hover the icons, there is a box shadow and hightlight */
+.col-sm-1:hover {
+  background-color: rgb(109, 119, 255, .4);
+  box-shadow: 0 10px 15px rgba(109, 119, 255, .5);
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  width: 40px;
+  vertical-align: middle;
+  transition: width 2s, height 2s, transform .5s;
+}
+
+/* sizzle: added a transform to make the icon spin expands */
+.navbar-brand:hover {
+  transform: scale(1.5);
+}
+
+.navbar {
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 10;
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+  top:0;
+  border: 0;
+	box-shadow: 0px 10px 10px 0px rgba(109, 119, 255, 0.5);
+}
+
+.nav-link {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 4vw, 1.25em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.5);
+  vertical-align: middle;
+  color: white;
+}
+
+/* sizzle: added a filter onmy images */
+.carousel-item img{
+  width: 100%;
+  filter: brightness(0.5);
+}
+
+.carousel slide {
+  text-align: center;
+}
+
+.carousel-caption p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 4vw, 1.25em);
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+  vertical-align: middle;
+}
+
+.col-sm-2 {
+  flex: 10%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.col-sm-2 i {
+ color: black;
+ font-size: clamp(.75em, 4vw, 3em);
+ border: 1px solid transparent;
+ vertical-align: middle;
+}
+
+/* sizzle: when you hover the icons, there is a box shadow and hightlight */
+.col-sm-2:hover {
+  background-color: rgb(109, 119, 255, .4);
+  box-shadow: 0 10px 15px rgba(109, 119, 255, .5);
+  border-radius: 5px;
+}
+
+footer p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(.75em, 4vw, 1.25em);
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.6);
+  text-align: center;
+  vertical-align: middle;
+}
+
+

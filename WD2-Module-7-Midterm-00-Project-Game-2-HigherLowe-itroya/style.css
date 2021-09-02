@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background-image: linear-gradient(rgb(0, 195, 255), rgb(248, 151, 224));
+  background-repeat: no-repeat;
+  height: auto;
+  text-align: center;
+  padding: 100px;
+  color: rgb(36, 255, 226);
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+h6 {
+  font-size: 20pt;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1.5px 1.5px rgba(128,128,128,.6);
+}
+
+#higher-message {
+  font-size: 20pt;
+}
+
+ #lower-message {
+  font-size: 20pt;
+}
+
+ #win-message {
+  font-size: 20pt;
+ }
+
+ #lose-message {
+  font-size: 20pt;
+ }

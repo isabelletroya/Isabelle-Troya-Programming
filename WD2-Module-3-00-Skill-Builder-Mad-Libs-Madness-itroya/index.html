@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MadLibs</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Mad Libs</h1>
+      <form>
+        <h3>Pick Your Words</h3>
+
+        <input type="text" 
+               placeholder="Name of your Best Friend" 
+               id="Name-Best-Friend">
+        <input type="text" 
+               placeholder="Adjective"
+               id="adjective-1"> 
+        <input type="text" 
+               placeholder="Your favorite Animal" 
+               id="favorite-animal">
+        <input type="text" 
+               placeholder="Adjective"
+               id="adjective-2">
+        <input type="text" 
+               placeholder="Name of your favorite Movie Character" 
+               id="character-name">
+        <input type="text" 
+               placeholder="Name of your favorite Singer" 
+               id="favorite-singer">
+        <input type="text" 
+               placeholder="Adjective"
+               id="adjective-3">
+        <input type="text" 
+               placeholder="Your favorite Dessert" 
+               id="favorite-dessert">
+        <input type="text" 
+               placeholder="Your Name" 
+               id="your-name">
+
+        <button type="button" 
+                onclick="generate()">Generate</button>
+      </form>
+      <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

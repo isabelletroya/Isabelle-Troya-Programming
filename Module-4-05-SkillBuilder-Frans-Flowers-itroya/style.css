@@ -1,0 +1,72 @@
+
+ /*I changed the font family to "Fredoke One" because the font was sans-serif and the font was already naturally thick and bolded which is easier to read. I made the a different font family so people viewing the site can differentiate the name of the business and the information on the page.*/
+header {
+   font-family: 'Fredoka One', cursive;
+}
+
+body {
+    /*I made the font color a dark gray for the entire body because it is the easiest color to contrast with the white background. This allows for greater accessibility. */
+    color: #585858;
+
+    /*I made the background color of the website white so it contrast from the other text making it more accessible for the elderly and others with vision impairments*/
+    background-color: #FDFEFF;
+
+    /*I changed the font family to "Ubuntu" because the font was sans-serif and the font was already naturally thick and bolded which is easier to read. I also changed the entire body font size to 20pt so it was not as small making it easier to read. In the img folder, there is an file called "Accessibility Chart" and it shows that my website passes the electronic accessibility requirements meeting AAA guidelines. */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20pt;
+}
+
+h1 {
+  Color: #e43f5a;
+}
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #040F16;
+    text-align: center;
+}
+hr:after {
+    content: "❀";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #FDFEFF;
+}
+ 
+ /*I made the new prices of the different items the color red so people could differentiate it from the old price. The contrast can help people focus on one price ensuring more accessibility.*/
+h4 {
+  color: #ED0000;
+}
+ 
+ /*I put a text-decoration in the h5 element using strike-through on all the old price so visiter would only pay attention to the new discounted prices rather than the old ones. This reduces the possibilty of confusion for the user.*/
+h5 {
+  text-decoration: line-through;
+}
+
+/*I made the donation id bolded and the color red to show it's importance as well as make it pop more for people with visual impairments.*/
+#donation {
+  color: #ED0000;
+  font-weight: bold;
+}
+
+ /*For the different h2 elements, I changed the fonts and colors to differentiate the headings from the text. This goes for classes: .specials, .about-us, and .visit-us*/
+.specials h2 {
+  color: #1f4068;
+  font-family: 'Fugaz One', cursive;
+}
+
+.about-us h2 {
+  color: #1f4068;
+  font-family: 'Fugaz One', cursive;
+}
+
+.visit-us h2 {
+  color: #1f4068;
+  font-family: 'Fugaz One', cursive;
+}
+

@@ -1,0 +1,53 @@
+
+/* changed the background*/
+body {
+  background-image: url("img/unicorn.jpg");
+  margin: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Seymour One', sans-serif;
+  text-align: center;
+}
+
+#width {
+  opacity: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  transition-duration: .5s;
+  font-size: 20pt;
+  font-family: 'Seymour One', sans-serif;
+}
+
+#container > * {
+  display: inline-block;
+  font-family: 'Seymour One', sans-serif;
+
+}
+
+#length {
+  opacity: 0;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition-duration: .5s;
+  font-size: 20pt;
+  font-family: 'Seymour One', sans-serif;
+}
+
+/* changed carpet design */
+#area-box {
+  border: 2px solid rgb(114, 22, 235);
+  background-image: url("img/cloud.jpg");
+  width: 0px;
+  height: 20px;
+  background-size: 50px;
+  vertical-align: middle;
+  opacity: 0;
+  transition-duration: .9s;
+  color: rgb(114, 22, 235);
+  font-size: 100px;
+  text-align: center;
+}

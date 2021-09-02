@@ -1,0 +1,168 @@
+.photo-container:nth-child(1) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=1");
+}
+
+.photo-container:nth-child(2) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=2");
+}
+
+.photo-container:nth-child(3) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=3");
+}
+
+.photo-container:nth-child(4) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=4");
+}
+
+.photo-container:nth-child(5) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=5");
+}
+
+.photo-container:nth-child(6) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=6");
+}
+
+.photo-container:nth-child(7) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=7");
+}
+
+.photo-container:nth-child(8) .photo {
+background-image: 
+  url("https://picsum.photos/200/300?random=8");
+}
+
+.photo-container:nth-child(9) .photo {
+background-image: 
+   url("https://picsum.photos/200/300?random=9");
+}
+
+
+.img-hover-zoom--zoom-n-rotate img {
+  transition: transform .5s ease-in-out;
+}
+
+.img-hover-zoom--zoom-n-rotate:hover img {
+  transform: scale(1.25) rotate(20deg); /*I changed the scaling and the rotation degree*/
+}
+
+.img-hover-zoom--zoom-n-rotate img {
+   display: block; /*I had some issues with the inline-block display and ended up having to use block. However this caused it to be pushed all the way to the left and I had to add a margin-left element. I am not sure as to why my display was acting weird. */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 44px;
+}
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+  display: block; /*I had some issues with the inline-block display and ended up having to use block. However this caused it to be pushed all the way to the left and I had to add a margin-left element. I am not sure as to why my display was acting weird. */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 248px;
+}
+
+.img-hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+/* Blur-zoom Container */
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(.95); /*I changed the scaling*/
+  display: block; /*I had some issues with the inline-block display and ended up having to use block. However this caused it to be pushed all the way to the left and I had to add a margin-left element. I am not sure as to why my display was acting weird. */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 452px;
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  color: #afafaf;
+  font-size: 34px;
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+}
+
+hr {
+    margin: 0 auto 34px auto;
+    border: 0;
+    height: 2px;
+    width: 80%;
+    background-image: 
+      linear-gradient(to right, 
+        rgba(0, 0, 0, 0), 
+        rgba(175, 175, 175, .35), 
+        rgba(0, 0, 0, 0));
+}
+
+#gallery {
+  text-align: center;
+}
+
+.photo-container {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  transition-duration: .3s;
+}
+
+.photo-container:hover::before {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background-color: rgba (0,0,0,.8);
+  content: "";
+}
+
+.photo-container:hover .photo{
+  transform: scale(1.2);
+}
+
+.photo-container:hover::before {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0,0,0,.2);
+  color: white;
+  content: "Photo Name";
+  padding: 80px 30px;
+  z-index: 1;
+}
+

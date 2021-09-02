@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Foster A Pet</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Sign Up to Foster a Pet</h1>
+    </header>
+
+ <!-- When using <thead>, <tbody>, and <tfoot> tags for the table, the colors of the cells did not match the image provided within the assignment. When using said tags, it would color majority of the cells gray. Using the <tr> tags would allow the cells to be the correct colors. I made sure to follow the same instructions from the "HTML Tables" lesson. Also, I switched the CSS styling's even and odd so the colors would be in the correct alternating order. Before the table started off with the light pink color whereas the image provided had the light gray first. -->
+
+    <table>
+      <tr>
+        <td colspan="3">Available Pets</td>
+        <tr>
+          <td scope="col">Name</td>
+          <td scope="col">Age</td>
+          <td scope="col">Breed</td>
+        </tr>
+      </tr>
+      <tr>
+          <tr>
+           <td>Benny</td>
+           <td>2</td>
+           <td>Golden Retriever</td>
+          </tr>
+         <tr>
+           <td>Felix</td>
+           <td>5</td>
+           <td>Orange Tabby</td>
+         </tr>
+          <tr>
+           <td>Cooper</td>
+           <td>8</td>
+           <td>German Shepherd</td>
+         </tr>
+          <tr>
+           <td>Anna</td>
+           <td>3</td>
+           <td>Long-Haired Dachshund</td>
+         </tr>
+      </tr>
+    </table>
+    <img src="assets/dog.png" alt="Cute Dog Looking Over Form" width="40%">
+    
+
+    <form>
+      <label for="name">Full Name:</label>
+      <input type= "text" id="name" placeholder="Jane Doe" name="name">
+      <label for="DOB">Date of Birth</label>
+      <input type="Date" id="dob" name="dob">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com">
+      <label for="pw">Password</label>
+      <input type="password" id="pw" name="password">
+      <label for="num-pets">Number of Pets</label>
+      <input type="number" min="0" name="num-pets">
+      <h4>Have you ever fostered before?</h4>
+      <label for="yes">
+        <input type="radio" id="yes"
+        name="prev-experience">Yes</input>
+      </label>
+      <label for="no">
+        <input type="radio" id="no"
+        name="prev-experience">No</input>
+        <h4>Which of these apply to your home?</h4>
+        <label for="apartment">Apartment</label>
+        <input type="checkbox" id="apartment" name="apartment">
+        <label for="Children">Children</label>
+        <input type="checkbox" id="children" name="children">
+        <label for="yard">Yard</label>
+        <input type="checkbox" id="yard" name="yard">
+        <input type="submit" value="Sign Up!">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+
+.col-8 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(#ffb5b5, #ffe7e7);
+}
+.row {
+  margin: 4vh 0;
+}
+
+.col-sm {
+  float: left;
+  margin: 10px;
+  display: table-cell;
+}
+
+.container {
+  text-align: center;
+}
+
+#name, #encouragement {
+  text-align: center;
+}
+
+input {
+  height: 40px;
+  text-align: center;
+}
+
+textarea {
+  width: 80%;
+}
+
+textarea::placeholder {
+  text-align: center;
+  line-height: 60px;
+}
